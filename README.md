@@ -19,7 +19,7 @@
 *** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
-[LinkedIn](https://www.linkedin.com/in/vaidehi-lehekar/)
+[My LinkedIn](https://www.linkedin.com/in/vaidehi-lehekar/)
 
 
 
@@ -30,19 +30,10 @@
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">Best-README-Template</h3>
+  <h3 align="center">Person Re-Identification using CCTV Footage</h3>
 
   <p align="center">
-    An awesome README template to jumpstart your projects!
-    <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+    
   </p>
 </div>
 
@@ -55,7 +46,7 @@
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
-        <li><a href="#built-with">Built With</a></li>
+        <li><a href="#Testing-Environment">Testing Environment</a></li>
       </ul>
     </li>
     <li>
@@ -63,6 +54,12 @@
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
+        <ul>
+         <li><a href="#Data-Collection"> Step 1: Data Collection and Preprocessing </a><.li>
+          <li><a href="#Person-detection-and-tracking">Step 2:  Person Detection and Tracking </a></li>
+          <li><a href="#Feature-Extraction"> Step 3: Feature Extraction </a>/li>
+          <li><a href="#Person-Re-identification-model">Step 4: Person Re-Identification Model </a></li>
+          <li><a href="#Visualization-and-Demonstration">Step 5: Visualization and Demonstration </a></li>
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
@@ -79,37 +76,23 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
-
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
-
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
-
-Use the `BLANK_README.md` to get started.
+Objective: The objective of this assignment is to assess your computer vision skills in person reidentification using publicly available CCTV footage. You will develop a model to identify and
+track individuals across multiple camera views.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
+### Testing Environment
 
-### Built With
+Operating system:
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+1. MacOS Sonoma
+   
+Python package (Python 3.5 or Python3.6)
+1. Tensorflow 1.8
+2. Jupyter Notebook
+4. opencv 3.3 (Need opencv dnn library)
+5. Numpy
 
 
 
@@ -138,7 +121,7 @@ _Below is an example of how you can instruct your audience on installing and set
    ```
 3. Install NPM packages
    ```sh
-   npm install
+   npm install 
    ```
 4. Enter your API in `config.js`
    ```js
@@ -146,6 +129,22 @@ _Below is an example of how you can instruct your audience on installing and set
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Step 1: Data Collection and Preprocessing
+
+
+The Video Footage has been obtained from the below source: 
+
+[EPFL](https://www.epfl.ch/labs/cvlab/data/data-pom-index-php/):
+On this page you can download a few multi-camera sequences that have been acquired by EPFL for developing and testing people detection and tracking framework. 
+All videos, calibration and ground truth files available on this page are copyrighted by CVLab – EPFL. You can use them for research purposes. If you use them to publish
+All of the sequences feature several synchronised video streams filming the same area under different angles. All cameras are located about 2 meters from the ground. All pedestrians on the sequences are members of people willingly participating in the research project.
+
+The Camera Sequences selected are:
+<img width="676" alt="Screenshot 2023-10-21 at 2 17 06 PM" src="https://github.com/Vaidehi5Lehekar/VideoObjectTracking/assets/62598069/bd8245fe-f368-43c1-96ce-317f89f43dcb">
+
+<p align="center">Preprocessing </p>
+
 
 
 
