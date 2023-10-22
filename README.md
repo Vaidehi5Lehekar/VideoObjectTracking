@@ -26,9 +26,6 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
 
   <h3 align="center">Person Re-Identification using CCTV Footage</h3>
 
@@ -54,14 +51,12 @@
       <ul>
         <li><a href="#prerequisites">Prerequisites</a></li>
         <li><a href="#installation">Installation</a></li>
-        <ul>
-         <li><a href="#Data-Collection"> Step 1: Data Collection and Preprocessing </a><.li>
-          <li><a href="#Person-detection-and-tracking">Step 2:  Person Detection and Tracking </a></li>
-          <li><a href="#Feature-Extraction"> Step 3: Feature Extraction </a>/li>
-          <li><a href="#Person-Re-identification-model">Step 4: Person Re-Identification Model </a></li>
-          <li><a href="#Visualization-and-Demonstration">Step 5: Visualization and Demonstration </a></li>
-      </ul>
-    </li>
+        <li><a href="#Data-Collection"> Step 1: Data Collection and Preprocessing </a></li>
+        <li><a href="#Person-detection-and-tracking">Step 2:  Person Detection and Tracking </a></li>
+        <li><a href="#Feature-Extraction"> Step 3: Feature Extraction </a></li>
+        <li><a href="#Person-Re-identification-model">Step 4: Person Re-Identification Model </a></li>
+        <li><a href="#Visualization-and-Demonstration">Step 5: Visualization and Demonstration </a></li>
+        </li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
@@ -130,7 +125,7 @@ _Below is an example of how you can instruct your audience on installing and set
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Step 1: Data Collection and Preprocessing
+### Step 1: Data Collection and Preprocessing
 
 
 The Video Footage has been obtained from the below source: 
@@ -144,6 +139,15 @@ The Camera Sequences selected are:
 <img width="676" alt="Screenshot 2023-10-21 at 2 17 06 PM" src="https://github.com/Vaidehi5Lehekar/VideoObjectTracking/assets/62598069/bd8245fe-f368-43c1-96ce-317f89f43dcb">
 
 <p align="center">Preprocessing </p>
+
+<h4>Video to frame conversion</h4>
+1. Create a folder with the input videos downloaded and a folder for the frames captured from the preprocessing.
+2. Apply code for preprocessing. Refer the .ipynb file
+
+
+### Step 2:  Person Detection and Tracking
+
+
 
 
 
